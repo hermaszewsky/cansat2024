@@ -13,14 +13,15 @@
 #include <LoRa.h>
  
 // Define the pins used by the LoRa module
-const int csPin = 4;     // LoRa radio chip select
-const int resetPin = 2;  // LoRa radio reset
-const int irqPin = 3;    // Must be a hardware interrupt pin
+// for Arduino UNO
+// const int csPin = 4;     // LoRa radio chip select
+// const int resetPin = 2;  // LoRa radio reset
+// const int irqPin = 3;    // Must be a hardware interrupt pin
 
-//pico:
-//const int csPin = 17;
-//const int resetPin = 1;
-//const int irqPin = 0;
+//for Raspberry Pi Pico:
+const int csPin = 17;
+const int resetPin = 1;
+const int irqPin = 0;
 
 // Message counter
 byte msgCount = 0;
